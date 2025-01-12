@@ -1,0 +1,120 @@
+Project Overview:
+You are tasked with building VTS Team Growth Tracker (VTS-TGT), a web-based app designed for network marketing team management. This app will help track DebiCheck, recruitment activities, team performance, and goal progress. The app will be developed using React Native Expo, Firebase, and file-based routing, leveraging modern technologies to ensure the app is secure, high-performance, and scalable.
+
+Key Features to Develop (Core Features)
+1. User Authentication
+Functionality: Implement secure user authentication using Firebase Authentication.
+Users: Admins and Team Members.
+Security: Ensure password strength, data encryption, and session expiration.
+2. File-based Routing
+React Router v6 for file-based routing:
+Each route (e.g., src/pages/admin.js, src/pages/dashboard.js) will correspond to a file in the directory structure.
+Ensure that the app uses React Router with automatic route generation based on files.
+This means pages will be dynamically imported based on file paths.
+3. Dashboard (Admin & Team Member Views)
+Functionality:
+Admin Dashboard: Full view of team performance, targets, DebiCheck status, and actions.
+Team Member Dashboard: Displays individual progress, targets, DebiCheck status, and performance history.
+Design:
+Use a clean, mobile-responsive layout with Gold, Ocean Blue, Matte Black, and Pure White for the interface.
+4. Activity Logging and Target Monitoring
+Functionality:
+Users can log invites, presentations, recruits, and follow-ups manually.
+Admins set daily/weekly/monthly targets for team members.
+Provide progress bars for individual/team goals.
+5. DebiCheck Tracking
+Functionality:
+Track DebiCheck status (Active, Pending, Inactive) for each recruit and team member.
+Admin can review and ensure DebiCheck compliance for commission processing.
+Automated reminders for pending DebiCheck registration.
+6. Notifications
+Functionality:
+Automated reminders for task completion (e.g., "Send 10 invites today").
+DebiCheck reminders and payment deadline alerts.
+Weekly summaries and leaderboard updates.
+7. Leaderboards & Achievements
+Functionality: Display leaderboards based on team performance (e.g., Top Recruiters, Most Invites, etc.).
+Achievements: Offer badges or rewards for reaching milestones (e.g., “Top Presenter” or “Most Consistent”).
+8. Reporting and Analytics
+Functionality:
+Generate weekly/monthly performance reports.
+Visualize performance using charts (e.g., Google Charts, Plotly).
+Technology Stack
+Frontend:
+React Native Expo (for the initial web app and later transition to mobile app).
+React Router v6: For file-based routing with dynamic route generation from the file structure.
+Styled-components or Tailwind CSS for styling to ensure a mobile-responsive, clean UI.
+Chart.js or Plotly for visual data representation (performance analytics).
+Backend:
+Firebase Firestore: Real-time database for syncing activity logs and user data.
+Firebase Authentication: For secure user management (sign-up/sign-in).
+Firebase Cloud Functions: To trigger notifications, task reminders, and performance evaluations.
+Development Tools:
+React Router v6: For modern, file-based routing.
+Expo: For building a cross-platform app that can be deployed to web, Android, and iOS.
+Firebase Hosting: For easy deployment of the web app.
+Security:
+SSL Encryption: Ensure secure data transmission between client and server.
+Role-Based Access Control (RBAC): Use Firebase to manage different access levels for admin and team members.
+File Structure for File-based Routing
+The app will be organized in a way that each route corresponds to a file:
+
+bash
+Copy code
+/src
+  /pages
+    /admin.js
+    /dashboard.js
+    /login.js
+    /profile.js
+    /recruits.js
+    /reports.js
+  /components
+    /Header.js
+    /Sidebar.js
+    /Notifications.js
+    /ActivityLog.js
+  /assets
+    /images
+    /icons
+  /utils
+    /firebase.js
+    /helpers.js
+Each page in the /pages directory will be automatically mapped to a route (e.g., /admin, /dashboard, /login), based on the file path.
+
+For example:
+
+/src/pages/admin.js will map to the route /admin.
+/src/pages/dashboard.js will map to /dashboard.
+The app will automatically handle routes based on this file-based routing structure, simplifying navigation.
+
+Performance and Scalability Expectations
+1. Performance Optimization:
+Ensure minimal page load time with lazy loading for non-critical components.
+Implement state management (e.g., Redux or Context API) to manage application state efficiently.
+Real-time updates using Firebase for syncing activity logs, invite progress, and DebiCheck status.
+2. Scalability:
+Ensure that Firestore can scale to handle 500+ team members with real-time data syncing.
+Implement pagination or infinite scroll where necessary (e.g., activity logs, recruit lists) to avoid overloading the app.
+UI/UX Design Expectations
+Clean & Minimal Design: Focus on usability with clear icons, intuitive navigation, and responsive layout.
+Brand Consistency: Use the colors Gold, Ocean Blue, Matte Black, and Pure White for a professional look aligned with the company’s branding.
+Mobile-First Approach: Although this is initially a web app, ensure the design is mobile-responsive for later transition to Android and iOS.
+Additional Requirements for the Prototype (End of Day Deliverables)
+Core Features: Implement the basic functionality of the app, including:
+User authentication with Firebase Authentication.
+File-based routing using React Router v6.
+Logging of invites, presentations, and recruits.
+DebiCheck status tracking.
+Leaderboards and basic reporting.
+Visual Appeal: Ensure that the design is clean, minimalistic, and mobile-responsive.
+Secure & High-Performance: Ensure that the app handles user data securely and performs well, with real-time updates.
+Evaluation Criteria:
+Functionality: Are all core features (invites, presentations, DebiCheck tracking) working as expected?
+File-based Routing: Is routing handled via file paths, and is navigation seamless?
+Security: Are security features implemented correctly, particularly Firebase Authentication and data encryption?
+Performance: Is the app fast, responsive, and capable of handling real-time updates?
+User Experience: Is the UI intuitive and visually appealing? Is it mobile-friendly?
+Scalability: Can the app scale as more users are added?
+Next Steps:
+Proceed with development following these instructions and deliver a working prototype at the end of the day.

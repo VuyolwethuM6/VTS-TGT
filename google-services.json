@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1089458277022",
+    "project_id": "vts-tgt",
+    "storage_bucket": "vts-tgt.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1089458277022:android:79036f993db12229bb898f",
+        "android_client_info": {
+          "package_name": "com.vts_gtg"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiCqrZHaCKrO8ieuUJ6Tl82VFL2kh_Bwc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
