@@ -1,0 +1,20 @@
+export type RootStackParamList = {
+  Login: undefined;
+  Dashboard: undefined;
+  AdminDashboard: undefined;
+  AdminRegistration: undefined;
+  Invite: undefined;
+  Profile: undefined;
+  Notifications: undefined;
+  Team: undefined;
+  Performance: undefined;
+  TeamTargets: undefined;
+  PerformanceMetrics: undefined;
+  Permissions: undefined;
+  EditProfile: undefined;
+  Security: undefined;
+  NotificationSettings: undefined;
+  Language: undefined;
+  About: undefined;
+  UserManagement: undefined;
+}; 
