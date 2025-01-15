@@ -20,7 +20,7 @@ console.log('Firebase Config:', {
   appId: firebaseConfig.appId ? 'exists' : 'missing',
 });
 
-// Initialize Firebase
+
 const app = initializeApp(firebaseConfig);
 console.log('Firebase initialized');
 
